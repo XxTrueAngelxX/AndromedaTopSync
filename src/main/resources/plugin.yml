@@ -1,0 +1,17 @@
+name: AndromedaTopSync
+version: '1.0.0'
+main: world.andromeda.topsync.TopSyncPlugin
+api-version: '26.1.2'
+authors: [XxTrueAngelxX]
+description: Согласованные снимки ajLeaderboards для табличек, голов и DecentHolograms.
+depend: [ajLeaderboards, DecentHolograms]
+softdepend: [SkinsRestorer]
+commands:
+  topsync:
+    description: Состояние и обновление согласованных топов.
+    usage: /topsync status|refresh
+    permission: andromeda.topsync.admin
+permissions:
+  andromeda.topsync.admin:
+    default: op
+    description: Проверка состояния и ручное обновление топов.
